@@ -1,0 +1,10 @@
+#!/bin/bash
+mingw32-make
+./assign3.exe -alg FIFO -input department.txt
+echo
+./assign3.exe -alg SJF -input department.txt
+echo
+./assign3.exe -alg PR -input department.txt
+echo
+./assign3.exe -alg RR -quantum 45 -input department.txt
+mingw32-make clean
